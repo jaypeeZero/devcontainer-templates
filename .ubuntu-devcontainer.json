@@ -1,14 +1,13 @@
 {
 	"name": "Container Name",
 	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	// enable docker-in-docker to run docker inside your devcontainer
+	//"features": {
+		//"ghcr.io/devcontainers/features/docker-in-docker:1": {}
+	//},
 	"remoteUser": "vscode", // force the user to be 'vscode'
-	"updateRemoteUserUID": true, // update the remove user's 
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"updateRemoteUserUID": true, // update the remote user's id to match the host user id
 	"postCreateCommand": "./post-install.sh",
-	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
 			"extensions": [
