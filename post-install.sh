@@ -7,5 +7,3 @@ echo >> /home/vscode/.bashrc
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/vscode/.bashrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-# install tig (or anything with Homebrew)
-/bin/bash -c "$(brew install tig)"
