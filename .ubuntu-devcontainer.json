@@ -1,0 +1,19 @@
+{
+	"name": "Container Name",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+	"remoteUser": "vscode", // force the user to be 'vscode'
+	"updateRemoteUserUID": true, // update the remove user's 
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+	"postCreateCommand": "./post-install.sh",
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"some-extension-id"
+			]
+		}
+	}
+}
