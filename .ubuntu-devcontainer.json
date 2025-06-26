@@ -1,13 +1,11 @@
 {
 	"name": "Container Name",
 	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-	// enable docker-in-docker to run docker inside your devcontainer
-	//"features": {
-		//"ghcr.io/devcontainers/features/docker-in-docker:1": {}
-		//"ghrc.io/devcontainers/features/docker-outside-of-docker:1": {}
-	//},
-	"remoteUser": "vscode", // force the user to be 'vscode'
-	"updateRemoteUserUID": true, // update the remote user's id to match the host user id
+	"features": {
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+	},
+	"remoteUser": "vscode",
+	"updateRemoteUserUID": true,
 	"postCreateCommand": "./post-install.sh",
 	"customizations": {
 		"vscode": {
